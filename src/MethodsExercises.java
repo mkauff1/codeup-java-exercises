@@ -1,5 +1,17 @@
 import java.util.Scanner;
 public class MethodsExercises {
+    public static void main (String[] args) {
+//        System.out.println(addition(1, 3));
+//        System.out.println(subtraction(2, 1));
+//        System.out.println(multiplication(2, 2));
+//        System.out.println(division(6, 2));
+//        System.out.println(modulus(4, 2));
+
+//        getInteger(1, 10);
+//        getFactorial(1, 10);
+//        diceRoll();
+
+    }
 
     public static int addition (int num1, int num2) {
         return num1 + num2;
@@ -18,7 +30,7 @@ public class MethodsExercises {
 //        return result;
     }
 
-    public static int division (int num1, int num2) {
+    public static double division (double num1, double num2) {
         return num1 / num2;
     }
 
@@ -26,17 +38,16 @@ public class MethodsExercises {
         return num1 % num2;
     }
 
-    public static void main (String[] args) {
-//        System.out.println(addition(1, 3));
-//        System.out.println(subtraction(2, 1));
-//        System.out.println(multiplication(2, 2));
-//        System.out.println(division(6, 2));
-//        System.out.println(modulus(4, 2));
-
-//        getInteger(1, 10);
-//        getFactorial(1, 10);
-        diceRoll();
+    public static int multiplyByAdd (int x, int y) {
+        //How to Stop
+        if (x == 0 || y == 0) {
+            return 0;
+        }
+        // How to Proceed
+        return ( x + multiplyByAdd(x, y-1));
     }
+
+
 
     public static void getInteger(int min, int max) {
         Scanner sc = new Scanner(System.in);
