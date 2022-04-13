@@ -1,3 +1,4 @@
+package util;
 import util.Input;
 
 public class Main {
@@ -19,9 +20,9 @@ public class Main {
 //        person2.setName("Jane");
 //        System.out.println(person1.getName());
 //        System.out.println(person2.getName());
-        Input input = new Input();
-
-        System.out.println(input.getString("Enter here: "));
-        System.out.println(input.getDouble(5.599, 10.499));
+//        Input input = new Input();
+//
+//        System.out.println(input.getString("Enter here: "));
+//        System.out.println(input.getDouble(5.599, 10.499));
     }
 }
