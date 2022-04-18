@@ -1,36 +1,54 @@
 package shapes;
 
-public class Rectangle {
+public class Rectangle extends Quadrilateral implements Measurable{
 
-    public static void main(String[] args) {
-        Rectangle box1 = new Rectangle(4, 5);
-        System.out.println(box1.getPerimeter());
-        System.out.println(box1.getArea());
-
-        Rectangle box2 = new Square(5);
-        System.out.println(box2.getPerimeter());
-        System.out.println(box2.getArea());
-
-    }
+//    public static void main(String[] args) {
+//        Rectangle box1 = new Rectangle(4, 5);
+//        System.out.println(box1.getPerimeter());
+//        System.out.println(box1.getArea());
+//
+//        Rectangle box2 = new Square(5);
+//        System.out.println(box2.getPerimeter());
+//        System.out.println(box2.getArea());
+//
+//    }
 
     //    PROPERTIES (Fields)
-    protected int length;
-    protected int width;
+//    protected int length;
+//    protected int width;
 
     //    CONSTRUCTORS
-    public Rectangle(int lengthToSet, int widthToSet) {
-        this.length = lengthToSet;
-        this.width = widthToSet;
+    public Rectangle(double lengthToSet, double widthToSet) {
+        super(lengthToSet, widthToSet);
+//        this.length = lengthToSet;
+//        this.width = widthToSet;
     }
 
-    //    GETTERS AND SETTERS
+    // GETTERS AND SETTERS
+    public void setLength(double length){
+        this.length = length;
+    }
+
+    public void setWidth(double width) {
+        this.width = width;
+    }
+
+    @Override
+    protected void getWidth(double width) {
+
+    }
+
+    @Override
+    protected void getLength(double length) {
+
+    }
 
     //    CUSTOM METHODS
-    public int getArea() {
+    public double getArea() {
         return (this.length * this.width);
     }
 
-    public int getPerimeter() {
+    public double getPerimeter() {
         return ((2 * this.length) + (2 * this.width));
     }
 
