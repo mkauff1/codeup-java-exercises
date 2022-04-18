@@ -1,22 +1,21 @@
 package shapes;
 
-public class Square{
-
+public class Square extends Rectangle{
 
     //    PROPERTIES
-    private int side;
 
     //    CONSTRUCTORS
-    //public class Square extends Rectangle {
+    public Square(int side){
+        super(side, side);
 
-    //}
-
-    //    CUSTOM METHODS
-    public static void getArea(int side) {
-        System.out.println(side ^ 2);
     }
 
-    public static void getPerimeter(int side) {
-        System.out.println(4 * side);
+    //    CUSTOM METHODS
+    public int getArea() {
+        return (int) Math.pow(this.length, 2);
+    }
+
+    public int getPerimeter() {
+        return (4 * this.length);
     }
 }

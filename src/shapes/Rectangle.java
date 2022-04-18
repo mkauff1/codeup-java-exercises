@@ -3,46 +3,35 @@ package shapes;
 public class Rectangle {
 
     public static void main(String[] args) {
-        //Rectangle box1 = new Rectangle();
-        //Rectangle box2 = new Square();
+        Rectangle box1 = new Rectangle(4, 5);
+        System.out.println(box1.getPerimeter());
+        System.out.println(box1.getArea());
+
+        Rectangle box2 = new Square(5);
+        System.out.println(box2.getPerimeter());
+        System.out.println(box2.getArea());
 
     }
 
-    //    PROPERTIES
-    private int length;
-    private int width;
+    //    PROPERTIES (Fields)
+    protected int length;
+    protected int width;
 
     //    CONSTRUCTORS
-    public Rectangle(int length, int width) {
-        this.length = length;
-        this.width = width;
-
+    public Rectangle(int lengthToSet, int widthToSet) {
+        this.length = lengthToSet;
+        this.width = widthToSet;
     }
 
     //    GETTERS AND SETTERS
-    public int getLength() {
-        return length;
-    }
-
-    public void setLength(int length) {
-        this.length = length;
-    }
-
-    public int getWidth() {
-        return width;
-    }
-
-    public void setWidth(int width) {
-        this.width = width;
-    }
 
     //    CUSTOM METHODS
-    public static int getArea(int length, int width) {
-        return (length * width);
+    public int getArea() {
+        return (this.length * this.width);
     }
 
-    public static int getPerimeter(int length, int width) {
-        return ((2 * width) + (2 * length));
+    public int getPerimeter() {
+        return ((2 * this.length) + (2 * this.width));
     }
 
 }
