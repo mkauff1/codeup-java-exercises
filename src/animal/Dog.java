@@ -22,6 +22,6 @@ public class Dog extends Animal{
         return "Dog details: " + "\n" +
                 "Number of Legs: " + numberOfLegs + "\n" +
                 "Preferred Climate: " + preferredClimate + "\n" +
-                "Needs Attention: " + needsAttention;
+                "Needs Attention: " + needsAttention + "\n";
     }
 }

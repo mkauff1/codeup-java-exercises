@@ -14,6 +14,15 @@ public abstract class Animal {
         this.preferredClimate = preferredClimate;
     }
 
+    public Animal(String preferredClimate) {
+        this.preferredClimate = preferredClimate;
+    }
+
+    public Animal (){
+    }
+
+
+
     //properties
     public int getNumberOfLegs() {
         return numberOfLegs;

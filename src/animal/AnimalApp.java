@@ -9,8 +9,14 @@ public class AnimalApp {
 
         int numLegs = 4;
         String prefClimate = "In the house";
-        Animal animal = new Dog(numLegs, prefClimate);
 
-        System.out.println(animal.getAnimalInfo());
+        Animal animal1 = new Dog(numLegs, prefClimate);
+        System.out.println(animal1.getAnimalInfo());
+
+        Animal animal2 = new Cat(4, prefClimate);
+        System.out.println(animal2.getAnimalInfo());
+
+        Animal animal3= new Fish("Sub-Tropical", true);
+        System.out.println(animal3.getAnimalInfo());
     }
 }
