@@ -8,12 +8,13 @@ public class Input {
 //        this.scanner = new Scanner(System.in);
 //    }
 
-    public String getString(String prompt) {
-        System.out.println(prompt);
+    public static String getString() {
+        //boolean prompt = true;
+        //System.out.println(prompt);
         return scanner.nextLine();
     }
 
-    public boolean yesNo() {
+    public static boolean yesNo() {
         System.out.println("Enter yes or no");
         String userInput = scanner.next();
         if (userInput.equalsIgnoreCase("yes") || userInput.equalsIgnoreCase("y")) {
