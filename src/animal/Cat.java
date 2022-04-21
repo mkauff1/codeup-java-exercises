@@ -17,6 +17,19 @@ public class Cat extends Animal{
         this.cleansItself = cleansItself;
     }
 
+    public void makePassiveSound(){
+        System.out.println("Meowwwww");
+    }
+
+    public void makeAggressiveSound(){
+        System.out.println("Hisssssssss");
+    }
+
+    @Override
+    public void makeHappySound() {
+        System.out.println("Purrrrrrrrr");
+    }
+
     @Override //Dont need the override
     public String getAnimalInfo() {
         return "Cat details: " + "\n" +

@@ -1,6 +1,6 @@
 package animal;
 
-public abstract class Animal {
+public abstract class Animal implements Audible{
 
     // Typically, we do NOT add any main methods or static methods to the POJO
 

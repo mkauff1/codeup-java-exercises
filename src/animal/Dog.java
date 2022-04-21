@@ -17,6 +17,19 @@ public class Dog extends Animal{
         this.needsAttention = needsAttention;
     }
 
+    public void makePassiveSound(){
+        System.out.println("Zzzzzzzz");
+    }
+
+    public void makeAggressiveSound(){
+        System.out.println("BARK!");
+    }
+
+    @Override
+    public void makeHappySound() {
+        System.out.println("BORK BORK");
+    }
+
     @Override //Dont need the override
     public String getAnimalInfo() {
         return "Dog details: " + "\n" +

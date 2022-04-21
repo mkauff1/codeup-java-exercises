@@ -24,3 +24,8 @@ Create AnimalApp.java inside package animals (if you haven't already)
 Create an Animal variable and assign it a Dog, pass the appropriate arguments 
 Print to the console the return value of that instance's getAnimalInfo() 
 Do the same for Cat and Fish
+
+Animals have behaviors which can be inherited - interface time!
+
+    Audible interface allows for animals to make various sounds based on the situation
+    Give it at least 2 methods and implement within Animal
