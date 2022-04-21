@@ -23,6 +23,10 @@ public class Main {
 //        Input input = new Input();
 //
 //        System.out.println(input.getString("Enter here: "));
-//        System.out.println(input.getDouble(5.599, 10.499));
+//        System.out.println(Input.getDouble(5.599, 10.499));
+
+        System.out.println(Input.getBinary());
+
+
     }
 }
